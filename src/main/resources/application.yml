@@ -1,0 +1,9 @@
+general:
+  kafka-topic: trader-updates
+
+spring:
+  kafka:
+    bootstrap-servers: ${spring.embedded.kafka.brokers:localhost:9092}
+
+server:
+  port: 33400
